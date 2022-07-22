@@ -6,6 +6,7 @@ import { useAnimate } from "hooks";
 interface TeamCardProps {
   name: string;
   position: string;
+  nickname: string;
   image: string;
   color: string;
   animation: string;
@@ -14,6 +15,7 @@ interface TeamCardProps {
 const TeamCard: FC<TeamCardProps> = ({
   name,
   position,
+  nickname,
   image,
   color,
   animation,
@@ -46,6 +48,9 @@ const TeamCard: FC<TeamCardProps> = ({
       </Text>
       <Text mt={2} fontSize="2xl" fontWeight="bold">
         {position}
+      </Text>
+      <Text mt={2} fontSize="3xl" fontWeight="bold" fontStyle="italic">
+        {nickname}
       </Text>
     </Flex>
   );

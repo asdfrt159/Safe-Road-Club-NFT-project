@@ -7,11 +7,11 @@ import { FaDiscord, FaInstagram } from "react-icons/fa";
 import { IoMoon, IoSunny } from "react-icons/io5";
 
 // @ 로고 이미지는 public/images를 교체하시면 됩니다. URL은 우리 프로젝트의 URL을 작성하시면 됩니다.
-const logoImage = "logo_black.png";
-const logoImageDark = "logo_white.png";
-const openseaURL = "https://testnets.opensea.io/collection/projectlion-nft";
-const discordURL = "https://discord.gg/JV4whBWNPs";
-const instagramURL = "https://www.instagram.com/projectlion.io/";
+const logoImage = "logo.png";
+const logoImageDark = "logo.png";
+const openseaURL = "https://opensea.io/collection/safe-road-club-nft";
+const discordURL = "";
+const instagramURL = "";
 
 const Header: FC = () => {
   const scrollLink = ["Story", "Roadmap", "Team"];
@@ -31,6 +31,7 @@ const Header: FC = () => {
       shadow="md"
       zIndex={1}
       flexDir={["column", "column", "row"]}
+      backgroundColor = " white"
     >
       <Box fontWeight="bold" fontSize="lg" cursor="pointer">
         <Link href="/">
@@ -45,6 +46,7 @@ const Header: FC = () => {
           />
         </Link>
       </Box>
+      
       <Box>
         {scrollLink.map((v, i) => {
           return (
@@ -55,6 +57,11 @@ const Header: FC = () => {
             </ScrollLink>
           );
         })}
+        <Link href="/minting">
+          <Button variant="ghost"  mx={[0, 0, 8]} size={["xs", "xs", "sm"]} backgroundColor = "yellow">
+            MINTING
+          </Button>
+        </Link>
       </Box>
       <Flex alignItems="center" my={[4, 4, 0]}>
         <Link href={openseaURL}>

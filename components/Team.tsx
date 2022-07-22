@@ -6,33 +6,45 @@ import TeamCard from "./TeamCard";
 // @ name: 팀원 이름, position: 포지션, image: public/images에 있는 이미지 이름, color: color 이름 (모든 색상이 가능하지는 않습니다.)
 const teamCardConfig = [
   {
-    name: "h662",
-    position: "Product Manager",
-    image: "team1.png",
+    name: "이해창",
+    position: "기획",
+    nickname: "Handle",
+    image: "handle.png",
     color: "blue",
     animation: "tada",
   },
   {
-    name: "h663",
-    position: "Frontend",
-    image: "team2.png",
+    name: "백승호",
+    position: "기획",
+    nickname: "Head Light",
+    image: "headlight.png",
     color: "yellow",
     animation: "tada",
   },
   {
-    name: "h664",
-    position: "Graphic Design",
-    image: "team3.png",
+    name: "여민정",
+    position: "마케팅 디자인",
+    nickname: "Engine",
+    image: "engine.png",
     color: "green",
     animation: "tada",
   },
   {
-    name: "h665",
-    position: "Smart Contract",
-    image: "team4.png",
+    name: "김동진",
+    position: "디자인",
+    nickname: "Side Mirror",
+    image: "mirror.png",
     color: "red",
     animation: "tada",
   },
+  {
+    name: "이동훈",
+    position: "개발",
+    nickname: "Wiper",
+    image: "wiper.png",
+    color: "orange",
+    animation: "tada",
+  }
 ];
 
 const Team: FC = () => {
@@ -49,7 +61,7 @@ const Team: FC = () => {
           "repeat(1, 1fr)",
           "repeat(1, 1fr)",
           "repeat(2, 1fr)",
-          "repeat(4, 1fr)",
+          "repeat(5, 1fr)",
         ]}
       >
         {teamCardConfig.map((v, i) => {
@@ -58,6 +70,7 @@ const Team: FC = () => {
               key={i}
               name={v.name}
               position={v.position}
+              nickname={v.nickname}
               image={v.image}
               color={v.color}
               animation={v.animation}
