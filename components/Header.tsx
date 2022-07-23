@@ -9,8 +9,8 @@ import { IoMoon, IoSunny } from "react-icons/io5";
 // @ 로고 이미지는 public/images를 교체하시면 됩니다. URL은 우리 프로젝트의 URL을 작성하시면 됩니다.
 const logoImage = "logo.png";
 const logoImageDark = "logo.png";
-const openseaURL = "https://opensea.io/collection/safe-road-club-nft";
-const discordURL = "";
+const openseaURL = "https://opensea.io/collection/safe-road-club-nft-project";
+const discordURL = "https://discord.gg/sM7vAREr";
 const instagramURL = "";
 
 const Header: FC = () => {

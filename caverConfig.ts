@@ -1,7 +1,7 @@
 import { AbiItem } from "caver-js";
 
 // @ 스마트 컨트랙트의 주소를 기입 합니다.
-export const MINT_NFT_ADDRESS = "0x70b61f7Fc173e1bAd403Bd5Ed39B1E8BEEF28e3b";
+export const MINT_NFT_ADDRESS = "0xa86BFCbcf2834bF11dC66a4D25654FbF4f25bE8F";
 
 // @ Klaytn IDE로 부터 ABI를 가져옵니다.
 export const MINT_NFT_ABI: AbiItem[] = [
@@ -504,6 +504,7 @@ export const MINT_NFT_ABI: AbiItem[] = [
     type: "function",
   },
 ];
+
 
 [
 	{
